@@ -5,6 +5,7 @@
  id
  active (活動名稱)
  limit (活動總人數)
+ friend (可否攜伴)
  join (參加人數)
  start (開始時間)
  end (活動時間)

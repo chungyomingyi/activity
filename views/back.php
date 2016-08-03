@@ -3,31 +3,31 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     </head>
     <body>
-        <form action="" method="post" name="myForm">
+        <form action="../Home/create" method="post" name="myForm">
             <table border="2" align="center" bordercolor="#6666FF">
                 <tr bgcolor="#00a0dc"> 
-                    <td align="right">活動名稱</td>
-                    <td><input name="account" type="text" size="15"></td>
+                    <td align="right"><font color="#ffffff">活動名稱</font></td>
+                    <td><input name="active" type="text" size="15"></td>
                 </tr>
                 <tr bgcolor="#00a0dc"> 
-                    <td align="right">人數限制(總數量)</td>
-                    <td><input name="people" type="number" size="15"></td>
+                    <td align="right"><font color="#ffffff">人數限制(總數量)</font></td>
+                    <td><input name="limit" type="number" size="15"></td>
                 </tr>
                 <tr bgcolor="#00a0dc"> 
-                    <td align="right">是否可攜伴</td>
+                    <td align="right"><font color="#ffffff">是否可攜伴</font></td>
                     <td> 
-                        <input type="radio" name="sex" value="可" checked>可 
-                        <input type="radio" name="sex" value="不可">不可
+                        <input type="radio" name="friend" value="可" checked><font color="#ffffff">可</font> 
+                        <input type="radio" name="friend" value="不可"><font color="#ffffff">不可</font>
                     </td>
                 </tr>
                 <tr bgcolor="#00a0dc"> 
-                    <td align="right">開始報名時間</td>
-                    <td><input type="datetime-local" id="starttime" ></td>
+                    <td align="right"><font color="#ffffff">開始報名時間</font></td>
+                    <td><input type="datetime-local" id="start" name="start"></td>
                     </td>
                 </tr>
                 <tr bgcolor="#00a0dc"> 
-                    <td align="right">報名截止時間</td>
-                    <td><input type="datetime-local" id="endtime"></td>
+                    <td align="right"><font color="#ffffff">報名截止時間</font></td>
+                    <td><input type="datetime-local" id="end" name="end"></td>
                 </tr>
                 <tr bgcolor="#00a0dc"> 
                     <td align="center" colspan="2"> 
