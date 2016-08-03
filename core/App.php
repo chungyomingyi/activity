@@ -1,8 +1,6 @@
 <?php
 
 class App {
-    // https://..../home/index.php
-    
     
     public function __construct() {
         $url = $this->parseUrl();      //秀出陣列內容
@@ -19,7 +17,6 @@ class App {
         $params = $url ? array_values($url) : Array();
         call_user_func_array(Array($controller, $methodName), $params);
         
-        //homeController
     }
     
     public function parseUrl() {     //取得後面網址名稱
