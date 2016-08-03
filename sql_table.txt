@@ -1,0 +1,20 @@
+
+
+後端 back
+
+ id
+ active (活動名稱)
+ limit (活動總人數)
+ join (參加人數)
+ start (開始時間)
+ end (活動時間)
+ url (活動網址)
+
+    
+
+前端 front
+
+    number (員工編號)
+    name (名稱)
+
+

@@ -12,7 +12,7 @@
                     <td><input name="account" type="number" size="15"></td>
                 </tr>
                 <tr bgcolor="#00a0dc"> 
-                    <td align="right">攜件人數</td>
+                    <td align="right">攜伴人數</td>
                     <td><input name="account" type="number" size="15"></td>
                 </tr>
                 
