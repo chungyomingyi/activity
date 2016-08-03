@@ -6,8 +6,8 @@ class Config{
         
         //設定資料庫帳號密碼
         $config['db']['dsn']='mysql:host=localhost; dbname=booking; charset=utf8';
-        $config['db']['user'] = 'root';
-        $config['db']['password'] = '';
+        $config['db']['user'] = 'root';//帳號
+        $config['db']['password'] = '';//密碼
         
         $db = new PDO(
             $config['db']['dsn'],

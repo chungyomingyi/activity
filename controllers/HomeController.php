@@ -11,7 +11,7 @@ class HomeController extends Controller {
         $this->view("back");
     }
     
-    //加入活動，輸入編號頁面
+    //加入活動，輸入編號的頁面
     function add(){
         $this->view("add");
     }
@@ -19,10 +19,19 @@ class HomeController extends Controller {
     //新增活動資料，呼叫models/NewActivity.php
     function create(){
         
-        $this->models("NewActivity");
+        //取得back表單資料
+        $active = $_POST["active"];
+        $maxpeople = $_POST["maxpeople"];
+        $friend = $_POST["friend"];
+        $starttime = $_POST["starttime"];
+        $endtime = $_POST["endtime"];
         
-        //建立完活動回到前台活動顯示頁面
-        $this->views("front");
+        $insert=$this->models("NewActivity");
+        $result= $insert->insert_activity($active,$maxpeople,$friend,$starttime,$endtime);
+        $this->view("front",$result);
+        //回到前台活動顯示頁面
+        header("Location:../Home/front");
+        
     }
     
     

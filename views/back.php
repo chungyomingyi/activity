@@ -22,12 +22,12 @@
                 </tr>
                 <tr bgcolor="#00a0dc"> 
                     <td align="right"><font color="#ffffff">開始報名時間</font></td>
-                    <td><input type="datetime-local" id="start" name="start"></td>
+                    <td><input type="date" id="start" name="start"></td>
                     </td>
                 </tr>
                 <tr bgcolor="#00a0dc"> 
                     <td align="right"><font color="#ffffff">報名截止時間</font></td>
-                    <td><input type="datetime-local" id="end" name="end"></td>
+                    <td><input type="date" id="end" name="end"></td>
                 </tr>
                 <tr bgcolor="#00a0dc"> 
                     <td align="center" colspan="2"> 
