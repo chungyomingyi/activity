@@ -5,7 +5,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     </head>
     <body>
-        
+        <!--顯示活動頁面-->
         <table border="2" align="center" bordercolor="#6666FF">
             <tr bgcolor="#00a0dc"> 
                 <td align="right"><font color="#ffffff">活動名稱</font></td>
@@ -16,6 +16,7 @@
                 <td align="right"><font color="#ffffff">目前報名人數</font></td>
                 <td align="right"><font color="#ffffff">活動連結</font></td>
             </tr>
+            <!--讀取資料庫的資料並顯示出來-->
             <tr>
                 <td></td>
                 <td></td>

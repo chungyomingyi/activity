@@ -19,7 +19,7 @@ class HomeController extends Controller {
     //新增活動資料，呼叫models/NewActivity.php
     function create(){
         
-        //取得back表單資料
+        //取得back.php 新增活動表單資料
         $active = $_POST["active"];
         $maxpeople = $_POST["maxpeople"];
         $friend = $_POST["friend"];
@@ -29,8 +29,9 @@ class HomeController extends Controller {
         $insert=$this->models("NewActivity");
         $result= $insert->insert_activity($active,$maxpeople,$friend,$starttime,$endtime);
         $this->view("front",$result);
+        
         //回到前台活動顯示頁面
-        header("Location:../Home/front");
+        // header("Location:../Home/front");
         
     }
     

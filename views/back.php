@@ -3,6 +3,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     </head>
     <body>
+        <!--新增活動表單-->
         <form action="../Home/create" method="post" name="myForm">
             <table border="2" align="center" bordercolor="#6666FF">
                 <tr bgcolor="#00a0dc"> 

@@ -3,6 +3,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     </head>
     <body>
+        <!--參加人員表單-->
         <form action="" method="post" name="myForm">
             <table border="2" align="center" bordercolor="#6666FF">
                 <tr bgcolor="#00a0dc"> 
