@@ -1,39 +1,32 @@
 <?php 
 class BackController extends Controller {
     
-    //導向前台活動顯示頁面呼叫views/front.php
-    function front(){
-        $this->view("front");
+    //建立活動頁面
+    function newActivity(){
+        $this->view("newActivity");
     }
-    
-    //後台頁面，呼叫views/back.php
-    function back(){
-        $this->view("back");
-    }
-    
-    //加入活動，輸入編號的頁面
-    function add(){
-        $this->view("add");
-    }
-    
     //新增活動資料，呼叫models/NewActivity.php
     function create(){
-        
-        //取得back.php 新增活動表單資料
-        $active = $_POST["active"];
-        $maxpeople = $_POST["maxpeople"];
-        $friend = $_POST["friend"];
-        $starttime = $_POST["starttime"];
-        $endtime = $_POST["endtime"];
-        
+
         $insert=$this->model("NewActivity");
-        // $insert->insert_activity();
-        $result= $insert->insert_activity($active,$maxpeople,$friend,$starttime,$endtime);
-        $this->view("front",$result);
+        $result= $insert->insert_activity($_POST['active'],$_POST['maxpeople'],$_POST['friend'],$_POST['starttime'],$_POST['endtime']);
+        // foreach($result as $data);
         
-        //回到前台活動顯示頁面
-        // header("Location:../Home/front");
+        $data['activity'] = $data[0];
+        $data['maxpeople'] = $data[1];
+        $data['friend'] = $data[2];
+        $data['starttime'] = $data[3];
+        $data['endtime'] = $data[4];
+        $data['url'] = "https://lab-mingyi-lai.c9users.io/activity/Back/add?id=".$data[0]."";
         
+        $data['friend'] = $_POST['friend'];
+        $this->view("listActivity",$data);
+        
+    }
+    
+    //活動顯示頁面
+    function listActivity(){
+        $this->view("listActivity");
     }
     
     

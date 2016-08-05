@@ -1,5 +1,5 @@
 <?php
-
+//foreach ($data as $row);
 ?>
 
 <html>
@@ -18,15 +18,16 @@
                 <td align="right"><font color="#ffffff">目前報名人數</font></td>
                 <td align="right"><font color="#ffffff">活動連結</font></td>
             </tr>
-            <!--讀取資料庫的資料並顯示出來-->
+            <!--讀取資料庫的活動資料並顯示出來-->
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <?php foreach($data as $data); ?>
+                <td align="right"><?php $data['active']?></td>
+                <td align="right"><?php $data['maxpeople']?></td>
+                <td align="right"><?php $data['active']?></td>
+                <td align="right"><?php $data['starttime']?></td>
+                <td align="right"><?php $data['endtime']?></td>
+                <td align="right"><?php $data['joinman']?></td>
+                <td align="right"><a href="<?php $data['url'] ?>"></a><?php $data['url']?></td>
             </tr>
         </table>
         
