@@ -4,7 +4,7 @@
 
  id
  active (活動名稱)
- limit (活動總人數)
+ maxpeople (活動總人數)
  friend (可否攜伴)
  joinman (參加人數)
  starttime (開始時間)

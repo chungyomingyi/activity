@@ -4,7 +4,7 @@
     </head>
     <body>
         <!--新增活動表單-->
-        <form action="../Home/create" method="post" name="myForm">
+        <form action="../Back/create" method="post" name="myForm">
             <table border="2" align="center" bordercolor="#6666FF">
                 <tr bgcolor="#00a0dc"> 
                     <td align="right"><font color="#ffffff">活動名稱</font></td>

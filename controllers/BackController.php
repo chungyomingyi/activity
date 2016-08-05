@@ -1,5 +1,5 @@
 <?php 
-class HomeController extends Controller {
+class BackController extends Controller {
     
     //導向前台活動顯示頁面呼叫views/front.php
     function front(){
@@ -26,7 +26,8 @@ class HomeController extends Controller {
         $starttime = $_POST["starttime"];
         $endtime = $_POST["endtime"];
         
-        $insert=$this->models("NewActivity");
+        $insert=$this->model("NewActivity");
+        // $insert->insert_activity();
         $result= $insert->insert_activity($active,$maxpeople,$friend,$starttime,$endtime);
         $this->view("front",$result);
         
